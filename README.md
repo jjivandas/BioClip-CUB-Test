@@ -31,8 +31,13 @@ We tested the model using the official test split and computed overall and per-c
 * **Overall Accuracy:** 69.3%
 * Per-class accuracy saved in `per_class_accuracy.csv`
 
+* **Overall Accuracy:** 90.0% (using latest BioCLIP2 from GitHub, June 2025)
+* New Per-class accuracy saved in `per_class_accuracy_BC_2.csv`
+
 ## Notes
 
+* Important: The initial evaluation (with older PyPI version of BioCLIP) resulted in 69.3% accuracy.
+* After updating to the latest BioCLIP2 code from GitHub, the accuracy increased to 90%.
 * Initial evaluation used numeric class names, which led to mismatches
 * Stripped numeric prefixes from both predictions and labels to ensure accurate comparison
 
